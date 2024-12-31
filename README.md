@@ -131,7 +131,7 @@ Priority: u=1, i
       "w600": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w600.webp"
     },
     "startingSetId": "6742c1c369b24c360e7b8eda",
-    "isAdult": false,
+    "isAdult": true,
     "userNoteId": "67736db19657f4246b91c534"
   }
 }
