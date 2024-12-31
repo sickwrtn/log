@@ -1,5 +1,5 @@
 # 설명
-william.wow.wrtn.ai/chat-room/<room_id> 부분에 PUT 메소드로 내용은 {} 으로 보내면 채팅방의 설정과 정보에 대해서 응답해주고
+william.wow.wrtn.ai/chat-room/<room_id> 부분에 PUT 메소드로 내용은 {} 으로 요청을 보내면 채팅방의 설정과 정보에 대해서 응답해주고
 
 PUT 메소드로 캐릭터챗 정보를 양식대로 보내면 해당 치팅방id의 캐릭터 챗 정보를 권한제한없이 임의로 수정 가능함이 확인되었습니다.
 
