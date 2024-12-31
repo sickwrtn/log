@@ -39,6 +39,7 @@ Priority: u=1, i
 ```
 
 # 응답
+character의 isAdult 을 false로 수정
 ```
 HTTP/2 200 OK
 Date: Tue, 31 Dec 2024 04:06:40 GMT
@@ -136,6 +137,7 @@ Priority: u=1, i
 }
 ```
 # 응답
+character의 isAdult 값이 사라짐
 ```
 HTTP/2 200 OK
 Date: Tue, 31 Dec 2024 04:09:34 GMT
