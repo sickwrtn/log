@@ -95,7 +95,7 @@ Cf-Ray: 8fa765f32910d555-NRT
 ```
 
 # 요청
-character의 isAdult 을 false로 수정
+character의 isAdult 을 true로 수정
 ```
 PUT /chat-room/67736db19657f4246b91c52b HTTP/2
 Host: william.wow.wrtn.ai
