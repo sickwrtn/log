@@ -39,7 +39,6 @@ Priority: u=1, i
 ```
 
 # 응답
-character의 isAdult 을 false로 수정
 ```
 HTTP/2 200 OK
 Date: Tue, 31 Dec 2024 04:06:40 GMT
@@ -96,6 +95,7 @@ Cf-Ray: 8fa765f32910d555-NRT
 ```
 
 # 요청
+character의 isAdult 을 false로 수정
 ```
 PUT /chat-room/67736db19657f4246b91c52b HTTP/2
 Host: william.wow.wrtn.ai
