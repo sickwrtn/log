@@ -7,7 +7,7 @@ PUT 메소드로 캐릭터챗 정보를 양식대로 보내면 해당 치팅방i
 isAdult를 false 에서 true로 설정할려하면 isAudult 항목이 사라지는걸 확인했습니다. 이후 해당 채팅방에서 확인결과 세이프티봇이 언세이프티봇이 된것을 확인했습니다.(OOC 제제나 특정단어 검열이 아예 사라짐)
 언세이프티 항목은 세이프티화 시킬수없음이 확인됬습니다.
 # 요청
-```json
+```
 PUT /chat-room/67736db19657f4246b91c52b HTTP/2
 Host: william.wow.wrtn.ai
 Content-Length: 2
@@ -35,7 +35,7 @@ Priority: u=1, i
 ```
 
 # 응답
-```json
+```
 HTTP/2 200 OK
 Date: Tue, 31 Dec 2024 04:06:40 GMT
 Content-Type: application/json; charset=utf-8
@@ -59,11 +59,39 @@ Cf-Cache-Status: DYNAMIC
 Server: cloudflare
 Cf-Ray: 8fa765f32910d555-NRT
 
-{"result":"SUCCESS","data":{"_id":"67736db19657f4246b91c52b","userId":"6758744780dc101d13688517","model":"SONNET","isDeleted":false,"version":"1.2.0","shareChatIds":[],"character":{"_id":"6738b48ec4bc1d1deb5bf739","snapshotId":"674af489fbaa185fcbc3159a","name":"아카데미의 환생자","profileImage":{"origin":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5.webp","w200":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w200.webp","w600":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w600.webp"},"startingSetId":"6742c1c369b24c360e7b8eda","isAdult":false,"userNoteId":"67736db19657f4246b91c534"},"messagedAt":"2024-12-31T04:06:11.140Z","createdAt":"2024-12-31T04:06:09.925Z","updatedAt":"2024-12-31T04:06:11.407Z","__v":0,"topic":"gg"}}
+{
+  "result": "SUCCESS",
+  "data": {
+    "_id": "67736db19657f4246b91c52b",
+    "userId": "6758744780dc101d13688517",
+    "model": "SONNET",
+    "isDeleted": false,
+    "version": "1.2.0",
+    "shareChatIds": [],
+    "character": {
+      "_id": "6738b48ec4bc1d1deb5bf739",
+      "snapshotId": "674af489fbaa185fcbc3159a",
+      "name": "아카데미의 환생자",
+      "profileImage": {
+        "origin": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5.webp",
+        "w200": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w200.webp",
+        "w600": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w600.webp"
+      },
+      "startingSetId": "6742c1c369b24c360e7b8eda",
+      "isAdult": false,
+      "userNoteId": "67736db19657f4246b91c534"
+    },
+    "messagedAt": "2024-12-31T04:06:11.140Z",
+    "createdAt": "2024-12-31T04:06:09.925Z",
+    "updatedAt": "2024-12-31T04:06:11.407Z",
+    "__v": 0,
+    "topic": "gg"
+  }
+}
 ```
 
 # 요청
-```json
+```
 PUT /chat-room/67736db19657f4246b91c52b HTTP/2
 Host: william.wow.wrtn.ai
 Content-Length: 671
@@ -87,10 +115,24 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
 Priority: u=1, i
 
-{"character":{"_id":"6738b48ec4bc1d1deb5bf739","snapshotId":"674af489fbaa185fcbc3159a","name":"아카데미의 환생자","profileImage":{"origin":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5.webp","w200":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w200.webp","w600":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w600.webp"},"startingSetId":"6742c1c369b24c360e7b8eda","isAdult":false,"userNoteId":"67736db19657f4246b91c534"}}
+{
+  "character": {
+    "_id": "6738b48ec4bc1d1deb5bf739",
+    "snapshotId": "674af489fbaa185fcbc3159a",
+    "name": "아카데미의 환생자",
+    "profileImage": {
+      "origin": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5.webp",
+      "w200": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w200.webp",
+      "w600": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w600.webp"
+    },
+    "startingSetId": "6742c1c369b24c360e7b8eda",
+    "isAdult": false,
+    "userNoteId": "67736db19657f4246b91c534"
+  }
+}
 ```
 # 응답
-```json
+```
 HTTP/2 200 OK
 Date: Tue, 31 Dec 2024 04:09:34 GMT
 Content-Type: application/json; charset=utf-8
@@ -114,5 +156,32 @@ Cf-Cache-Status: DYNAMIC
 Server: cloudflare
 Cf-Ray: 8fa76a360c4d685d-NRT
 
-{"result":"SUCCESS","data":{"_id":"67736db19657f4246b91c52b","userId":"6758744780dc101d13688517","model":"SONNET","isDeleted":false,"version":"1.2.0","shareChatIds":[],"character":{"_id":"6738b48ec4bc1d1deb5bf739","snapshotId":"674af489fbaa185fcbc3159a","startingSetId":"6742c1c369b24c360e7b8eda","name":"아카데미의 환생자","profileImage":{"origin":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5.webp","w200":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w200.webp","w600":"https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w600.webp"},"userNoteId":"67736db19657f4246b91c534"},"messagedAt":"2024-12-31T04:06:11.140Z","createdAt":"2024-12-31T04:06:09.925Z","updatedAt":"2024-12-31T04:09:34.455Z","__v":0,"topic":"gg"}}
+{
+  "result": "SUCCESS",
+  "data": {
+    "_id": "67736db19657f4246b91c52b",
+    "userId": "6758744780dc101d13688517",
+    "model": "SONNET",
+    "isDeleted": false,
+    "version": "1.2.0",
+    "shareChatIds": [],
+    "character": {
+      "_id": "6738b48ec4bc1d1deb5bf739",
+      "snapshotId": "674af489fbaa185fcbc3159a",
+      "startingSetId": "6742c1c369b24c360e7b8eda",
+      "name": "아카데미의 환생자",
+      "profileImage": {
+        "origin": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5.webp",
+        "w200": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w200.webp",
+        "w600": "https://wrtn-image-ai-character.s3.ap-northeast-2.amazonaws.com/8D6bovHnvZC-NVKOOUtYRlJT/4a42dd8e-bd80-45e0-9f5e-f032e3b5c4b5_w600.webp"
+      },
+      "userNoteId": "67736db19657f4246b91c534"
+    },
+    "messagedAt": "2024-12-31T04:06:11.140Z",
+    "createdAt": "2024-12-31T04:06:09.925Z",
+    "updatedAt": "2024-12-31T04:09:34.455Z",
+    "__v": 0,
+    "topic": "gg"
+  }
+}
 ```
